@@ -1,12 +1,14 @@
 body{
     background: #ffffff;
     color: #00274C;
+    font-size: 20px;
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     /* margin: 2%; */
     padding: 1em;
 }
 header {
     background-color: #00274C;
+    font-size: 20px;
     padding: 1em;
     width: 100%;
 }
@@ -22,7 +24,6 @@ header {
     height: auto;
 }
 li a:link{
-    font-size: 20px;
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: #000dfc;
@@ -44,7 +45,7 @@ li a:focus{
 nav>ul>li{
     padding: 20px;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: #ffffff;
     border: 2px solid #0072ce;
         margin: auto;
@@ -61,19 +62,21 @@ li a:active {
     color: #9A3324;
 }
 
-.active {
+ul>li.active {
     font-weight: bold;
+    /* Why am I unable to get the current active link to change color? */
+    color: #000dfc;
 }
 h1{
     color: #ffffff;
-   font-size: xx-large;
+   font-size: 1.75em;
    font-weight: 800;
    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
 }
 h2{
-    font-size:x-large;
+    font-size:1.5em;
     font-weight: 600;
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -81,12 +84,12 @@ h2{
     margin-bottom: 2em;
 }
 h3{
-    font-size: large;
+    font-size: 1.25em;
     font-weight: 500;
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
     margin-top: 1.25em;
-    margin-left: 5%;
+    margin-bottom: .75em;
 }
 p{
     font-size: 20px;
@@ -111,5 +114,18 @@ ol{
     margin-left: 10%;
 }
 .life-resources {
+    margin-top: 5%;
     margin-left: 10%;
+}
+ul.life-resources>li{
+    margin-bottom: 5%;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #00274C;
+    color: #ffffff;
+}
+footer a {
+    color: #FFCB05;
 }
