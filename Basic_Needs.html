@@ -12,7 +12,7 @@
 <body>
     <a class="skip" href ="#main">Skip to Main Content</a>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav class = "nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,21 +21,19 @@
                 <li class="active"><a href="Basic_Needs.html">Basic Needs Resources</a></li>
             </ul>
         </nav>
-        <h1>Basic Needs Resource Page</h1>
-
     </header>
     <main class="container" id="main">
+        <h1>Basic Needs Resource Page</h1>
         <section>
-            <h2>Basic Needs Resources</h2>
             <p>UMSI offers a variety of resources to support students' basic needs, including:</p>
-            <ul class="life-resources">
+            <ol class="life-resources">
                 <li><a href="Maize_Cupboard.html">Maize & Blue Cupboard</a></li>
+                <li><a href="https://basicneeds.studentlife.umich.edu/category/finance/">Financial Aid</a></li>
                 <li><a href="https://basicneeds.studentlife.umich.edu/category/housing-transportation/">Housing
                         Assistance</a></li>
-                <li><a href="https://basicneeds.studentlife.umich.edu/category/finance/">Financial Aid</a></li>
                 <li><a href="https://basicneeds.studentlife.umich.edu/category/health-care/">Health & Wellness
                         Services</a></li>
-            </ul>
+            </ol>
         </section>
         <section>
             <h2>Financial Aid Resources</h2>
@@ -57,10 +55,14 @@
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
-                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
-    </footer>
+        <p>MSI Academic Advising | </p>
+        <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <!-- Code below taken from CodexWorld. -->
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
 </body>
 
 </html>

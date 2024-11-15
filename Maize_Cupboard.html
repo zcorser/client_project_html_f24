@@ -12,7 +12,7 @@
 <body>
     <a class="skip" href ="#main">Skip to Main Content</a>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav class ="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,14 +21,13 @@
                 <li><a href="Basic_Needs.html">Basic Needs Resources</a></li>
             </ul>
         </nav>
-        <h1>Maize & Blue Cupboard</h1>
     </header>
     <main class="container" id="main">
+        <h1>Maize & Blue Cupboard</h1>
         <figure>
             <img src="images/MCOMMONS_DSC03396.jpg" alt="A student takes food from a buffet table.">
         </figure>
         <section>
-            <h2>Maize & Blue Cupboard</h2>
             <p>The Maize & Blue Cupboard is a student-run food pantry that provides free food and other essentials to
                 members of the University of Michigan community who are facing food insecurity. The pantry is open to
                 all U-M students, faculty, and staff, and offers a variety of non-perishable food items, fresh produce,
@@ -47,10 +46,14 @@
         </section>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
-                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
-    </footer>
+        <p>MSI Academic Advising | </p>
+        <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <!-- Code below taken from CodexWorld. -->
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
 </body>
 
 </html>

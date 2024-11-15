@@ -45,7 +45,7 @@ li a:focus{
 nav>ul>li{
     padding: 20px;
     border-radius: 8px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background-color: #ffffff;
     border: 2px solid #0072ce;
         margin: auto;
@@ -64,11 +64,11 @@ li a:active {
 
 ul>li.active {
     font-weight: bold;
-    /* Why am I unable to get the current active link to change color? */
-    color: #000dfc;
+    background-color: #bfd9ee;
+    text-decoration: underline;
 }
 h1{
-    color: #ffffff;
+    color: #00274C;
    font-size: 1.75em;
    font-weight: 800;
    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
@@ -76,11 +76,11 @@ h1{
     margin-top: 50px;
 }
 h2{
-    font-size:1.5em;
+    font-size:1.3em;
     font-weight: 600;
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin-top: 3.5em;
+    margin-top: 1.5em;
     margin-bottom: 2em;
 }
 h3{
@@ -96,7 +96,11 @@ p{
     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
     margin-top: 1.25em;
+    margin-bottom: 1em;
     line-height: 1.25em;
+}
+#life-outside-classroom{
+    margin-bottom: 6%;
 }
 img{
     border: 3px dotted blue;
@@ -104,6 +108,12 @@ img{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+#logo{
+    border: 3px solid #FFCB05;
+    width: 30%;
+    max-width: 150px;
+    left: 15%;
 }
 ol{
     font-size: 20px;
@@ -120,11 +130,19 @@ ol{
 ul.life-resources>li{
     margin-bottom: 5%;
 }
-footer {
+section.resources{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+footer {
+    display: flex;
     background-color: #00274C;
     color: #ffffff;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a {
     color: #FFCB05;

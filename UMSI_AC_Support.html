@@ -12,7 +12,7 @@
 <body>
     <a class="skip" href ="#main">Skip to Main Content</a>
     <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav class ="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,24 +21,23 @@
                 <li><a href="Basic_Needs.html">Basic Needs Resources</a></li>
             </ul>
         </nav>
-        <h1>Academic Support at UMSI</h1>
-
     </header>
     <main class="container" id="main">
+        <h1>Academic Support at UMSI</h1>
         <section>
-            <h2>UMSI Academic Support</h2>
             <p>UMSI offers a variety of academic support resources to help students succeed in their studies. These
                 resources include:</p>
-            <ul class="life-resources">
+            <ol class="life-resources">
                 <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=1">Programming Tutoring</a>
                 </li>
-                <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=1">Math Tutoring</a></li>
+                <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=1">Math Tutoring Program</a></li>
                 <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=1">Peer Tutoring Program</a>
                 </li>
                 <li><a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=1">Academic Advising</a></li>
-            </ul>
+            </ol>
         </section>
-        <section>
+        <section class="resources">
+        <section id="one">
             <h2>Programming Tutoring</h2>
             <figure>
                 <img src="images/UMSI_SI311_10132021_017.jpg" alt="UMSI students attending a lecture">
@@ -49,8 +48,8 @@
             <!-- Content taken & modified from Github Copilot suggestion.
              GitHub (2024). GitHub.Copilot (Sept 05 v1.229.0) [AI pair programmer]. -->
         </section>
-        <section>
-            <h2>Math Tutoring</h2>
+        <section id="two">
+            <h2>Math Tutoring Program</h2>
             <figure>
                 <img src="images/UMSI_DesignJam_02142022_01.jpg" alt="UMSI students brainstorming in a classroom">
             </figure>
@@ -60,7 +59,7 @@
             <!-- Content taken & modified from Github Copilot suggestion.
              GitHub (2024). GitHub.Copilot (Sept 05 v1.229.0) [AI pair programmer]. -->
         </section>
-        <section>
+        <section id="three">
             <h2>Peer Tutoring Program</h2>
             <figure>
                 <img src="images/UMSI_MHIClassroom_02202023_11.jpg"
@@ -72,7 +71,7 @@
             <!-- Content taken & modified from Github Copilot suggestion.
              GitHub (2024). GitHub.Copilot (Sept 05 v1.229.0) [AI pair programmer]. -->
         </section>
-        <section>
+        <section id="four">
             <h2>Academic Advising</h2>
             <figure>
                 <img src="images/UMSI_MHIClassroom_02202023_16.jpg "
@@ -85,12 +84,17 @@
             <!-- Content taken & modified from Github Copilot suggestion.
              GitHub (2024). GitHub.Copilot (Sept 05 v1.229.0) [AI pair programmer]. -->
         </section>
+        </section>
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
-                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
-    </footer>
+        <p>MSI Academic Advising | </p>
+        <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <!-- Code below taken from CodexWorld. -->
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
 </body>
 
 </html>

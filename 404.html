@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Success Portal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href ="#main">Skip to Main Content</a>
+    <header>
+        <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav class ="nav">
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "UMSI_AC_Support.html">UMSI Academic Support</a></li>
+                <li><a href = "Maize_Cupboard.html">Maize & Blue Cupboard</a></li>
+                <li><a href = "Basic_Needs.html">Basic Needs Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container" id="main">
+                <!-- CONTENT -->
+                <div id="content">
+                    <!-- Error -->
+                    <section class="error">
+                        <!-- Error Message -->
+                        <section class="error-msg">
+                            <h1>404: Missing Page</h1>
+                            <p>You have requested a resource that is not available on the U-M Personal web server. It is difficult to guess why this is the case on a server with so many different, unrelated web pages, but the page, image, or resource you requested is not available at this time.</p>
+                        </section>
+                        <!-- Tips -->
+                        <section class="tips">
+                            <h4>Here are some helpful tips:</h4>
+                            <ul>
+                                <li><b>Check the spelling</b> in the web address that appears in the address bar</li>
+                                <li>
+                                    <form method="GET" action="http://umich.edu/search/">
+                                        <label for="searchits" accesskey="I"><strong>Search:</strong></label>
+                                        <input type="text" size="30" name="keywords" value="">
+                                        <input type="submit" value="Search">
+                                    </form>
+                                </li>
+                                <li>Use the helpful links below</li>
+                                <li>
+                                    Go to <a href="index.html">Home Page</a> or back to <a href="javascript:history.back()" class="back-link">Previous Page</a>
+                                </li>
+                            </ul>
+                        </section>
+                        
+                        <!-- Information -->
+                        <section class="info">
+                            <h4>U-M Gateway</h4>
+                            <p><a href="http://www.umich.edu/">The U-M Gateway</a> is an entry point to networked information created or maintained by units of the University.</p>
+                        </section>
+        
+                        <!--Disclaimer -->
+                        <section class="disclaimer">
+                            <p><b>Disclaimer:</b> The information and statements appearing on personal Web pages are solely those of the particular individuals who own the pages and do not reflect the view of, or sponsorship or endorsement by, The Regents of the University of Michigan (or The University of Michigan) and its employees and agents.</p>
+                        </section>
+                    </section>
+                    <!-- End Error -->
+                </div>
+                <!-- END CONTENT -->
+                
+                <!-- FOOTER -->
+                <footer>
+                    <!-- Footer Logo -->
+                    <div class="footer-logo">
+                        <a href="http://www.umich.edu/">
+                            <img src="images/um-logo-m144.png" alt="University of Michigan" title="U-M Logo">
+                        </a>
+                    </div>
+                    
+                    <!-- Help -->
+                    <div class="help">
+                        <h4 class><a href="http://its.umich.edu/help/">Need Help?</a></h4>
+                        
+                        <!-- Help Links -->
+                        <div class="help-links">
+                            <ul>
+                                <li class="help-link-report">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    <a href="http://its.umich.edu/help/request/">Report an Issue Online</a>
+                                </li><!--
+                             --><li class="help-link-chat">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>
+                                    <a href="https://chatsupport.it.umich.edu/">Chat with a Representative</a>
+                                </li><!--
+        
+                             --><li class="help-link-call">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:734-764-4357">Call 734-764-HELP</a>
+                                </li><!--
+                             --><li class="help-link-email">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:4HELP@umich.edu">Email 4HELP@umich.edu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+        
+            </main>
+    <footer>
+        <p>MSI Academic Advising | </p>
+        <p><a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <!-- Code below taken from CodexWorld. -->
+        <p>© Copyrights <span id="year"></span> by CodexWorld. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+</body>
+</html>
