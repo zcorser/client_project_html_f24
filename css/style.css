@@ -109,6 +109,9 @@ img{
     left: 50%;
     transform: translateX(-50%);
 }
+img.index{
+    height: 300px;
+}
 #logo{
     border: 3px solid #FFCB05;
     width: 30%;
@@ -129,6 +132,7 @@ ol{
 }
 ul.life-resources>li{
     margin-bottom: 5%;
+    list-style-type: disc;
 }
 section.resources{
     display: grid;
