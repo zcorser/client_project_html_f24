@@ -32,8 +32,6 @@ li a:link{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    font-size: 20px;
-    text-align: center;
     margin-top: 1.25em;
     line-height: 1.25em;
 }
@@ -134,11 +132,6 @@ ul.life-resources>li{
     margin-bottom: 5%;
     list-style-type: disc;
 }
-section.resources{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-}
 footer {
     display: flex;
     background-color: #00274C;
@@ -148,6 +141,51 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+section.error {
+    margin-bottom: 1em;
+}
 footer a {
     color: #FFCB05;
+}
+section.tips>ul {
+    list-style-type: disc;
+    margin-left: 10%;
+}
+@media only screen and (min-width: 900px) {
+    .nav>ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .nav>ul>li {
+        font-size: 23px;
+        padding: 16px;
+    }
+    ul>li.active {
+        background-color: #bfd9ee;
+    }
+    #logo{
+        border: 3px solid #FFCB05;
+        width: 30%;
+        max-width: 300px;
+        left: 50%;
+    }
+    section.resources {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+    }
+    body{
+        background: #bfd9ee;
+        color: #00274C;
+    }
+    p {
+        font-size: 24px;
+    }
+    img.maize {
+        width: 100%;
+    }
+    ol.life-resources>li{
+        font-size: 22px;
+    }
 }
